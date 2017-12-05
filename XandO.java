@@ -7,7 +7,7 @@
  */
 
 import java.util.*;
-public class Main {
+public class TicTacToe {
     final int SIZE = 3;
     final char DOT_X = 'x';
     final char DOT_O = 'o';
@@ -17,10 +17,10 @@ public class Main {
     Random rand = new Random();
 
     public static void main(String[] args) {
-        new Main();
+        new TicTacToe();
     }
 
-    Main() {
+    TicTacToe() {
         initmap();
         while (true) {
             humanTurn();
