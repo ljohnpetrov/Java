@@ -3,7 +3,7 @@
  *
  * @author Ivan Petrov
  * @version dated Dec 05, 2017
- * @link
+ * @link https://github.com/ljohnpetrov/Java.git
  */
 
 import java.util.*;
