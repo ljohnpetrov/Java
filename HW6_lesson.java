@@ -3,7 +3,7 @@
  *
  * @author Ivan Petrov
  * @version dated Nov 30, 2017
- * @link 
+ * @link https://github.com/ljohnpetrov/Java
  */
 public class Main {
 
@@ -31,7 +31,7 @@ abstract class Animal implements IAnimal {
     int r;
     int s;
     double j;
-    Animal(){
+    Animal() {
         this.name = name;
         this.r = r;
         this.s = s;
@@ -46,7 +46,7 @@ class Cat extends Animal {
         this.s = s;
         this.j = j;
     }
-    public String name(){
+    public String name() {
         return "cat";
     }
     public boolean run(int r) {
@@ -70,7 +70,7 @@ class Dog extends Animal {
         this.s = s;
         this.j = j;
     }
-    public String name(){
+    public String name() {
         return "dog";
     }
     public boolean run(int r) {
