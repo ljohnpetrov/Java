@@ -2,7 +2,7 @@
  * Java. Level 1. Lesson 7. Homework
  *
  * @author Ivan Petrov
- * @version dated Nov 30, 2017
+ * @version dated Dec 15, 2017
  * @link https://github.com/ljohnpetrov/Java
  */
 
