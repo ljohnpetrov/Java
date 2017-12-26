@@ -1,17 +1,27 @@
 /**
- * Java. Level 1. Lesson 6. Homework
+ * Java. Level 2. Lesson 2. Homework
  *
  * @author Ivan Petrov
- * @version dated Nov 30, 2017
+ * @version dated Dec 26, 2017
  * @link https://github.com/ljohnpetrov/Java
  */
-
+ 
 import java.text.NumberFormat;
 import java.util.*;
 import java.io.*;
-
-public class Main {
-    static String[] Arrs = readFromFile(new File("src/file.txt"));
+/**
+ *1. Напишите метод, на вход которого подаётся двумерный строковый массив размером 4х4,
+ *при подаче массива другого размера необходимо бросить исключение ArrayIndexOutOfBoundsException.
+ *2. Далее метод должен пройтись по всем элементам массива, преобразовать в int,
+ *и просуммировать. Если в каком-то элементе массива преобразование не удалось 
+ *(например, в ячейке лежит символ или текст вместо числа),
+ *должно быть брошено исключение NumberFormatException, с детализацией в какой именно ячейке лежат неверные данные.
+ *3. В методе main() вызвать полученный метод, 
+ *обработать возможные исключения ArrayIndexOutOfBoundsException и NumberFormatException, и вывести результат расчета.
+ *4. *** Прочитать двухмерный строковый массив из текстового файла.
+*/
+public class HW2_lesson {
+    static String[] Arrs = readFromFile(new File("file.txt"));
 
     public static void main(String[] args) {
         for(String s : Arrs)
