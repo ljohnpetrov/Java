@@ -1,10 +1,17 @@
+/**
+ * Java. Level 1. Lesson 6. Homework
+ *
+ * @author Ivan Petrov
+ * @version dated Nov 30, 2017
+ * @link https://github.com/ljohnpetrov/Java
+ */
+
 import java.text.NumberFormat;
 import java.util.*;
 import java.io.*;
 
-public class HW2_lesson {
-    static String Arrs[] = new String[]
-            {"1 2 3 4, 1 2 3 4, 1 2 3 4, 1 2 3 4"};
+public class Main {
+    static String[] Arrs = readFromFile(new File("src/file.txt"));
 
     public static void main(String[] args) {
         for(String s : Arrs)
@@ -32,12 +39,16 @@ public class HW2_lesson {
             for (String[] mass : Mass)
                 for (String element : mass)
                     summ += Integer.parseInt(element);
-
             return summ;
-
-
         }
 
-
+    static String[] readFromFile(File file) {
+        String str = "";
+        try (Scanner read = new Scanner(file)) {
+            while (read.hasNext())
+                str += read.nextLine() + " ";
+        } catch (IOException ex) {  }
+        return str.split("q");
+    }
 }
 
